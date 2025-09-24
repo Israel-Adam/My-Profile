@@ -17,8 +17,8 @@
   <nav class="navbar">
     <div class="nav-logo">Israel <span>Adam</span></div>
     <ul class="nav-links">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Resume</a></li>
+     <li><a href="#Home">Home</a></li>
+      <li><a href="#Resume">Resume</a></li>
       <li><a href="#">Work</a></li>
       <li><a href="#">Contact</a></li>
      <li><a href="#">Blogs</a></li>
@@ -26,6 +26,7 @@
       <li><a href="#">Sign Up</a></li>
     </ul>
   </nav>
+
 
   <!-- Main Content -->
   <main>
@@ -53,7 +54,7 @@
 
     <!-- About Section -->
     <section class="about">
-      <h3>ABOUT ME</h3>
+      <h3 id="Home">ABOUT ME</h3>
       <p>Hello there! I’m thrilled to welcome you to my portfolio. I am a passionate and versatile full-stack developer with keen interest in exploring the latest cutting-edge technologies...</p>
 
       <!-- Services -->
@@ -81,18 +82,19 @@
    
   </main>
 
-  <h1>RESUME</h1>
+  <h1 id="Resume">RESUME</h1>
+  <div class="resume">RESUME</div>
       <div class="two-col">
         <section class="section" aria-labelledby="education-heading">
           <h3 id="education-heading">🎓 Education</h3>
 
-          <div class="entry 1">
+          <div class="entry">
             <div class="time">2025–2026</div>
             <div class="role">Software Development</div>
             <div class="org">Alight Coding School</div>
           </div>
 
-          <div class="entry 2">
+          <div class="entry">
             <div class="time">2021–2022</div>
             <div class="role">Project Manager</div>
             <div class="org">ERRADA — Khartoum, Sudan</div>
@@ -102,13 +104,13 @@
         <section class="section" aria-labelledby="experience-heading">
           <h3 id="experience-heading">💼 Experience</h3>
 
-          <div class="entry 3">
+          <div class="entry">
             <div class="time">2026 — Present</div>
             <div class="role">Technical Mentor</div>
             <div class="org">Alight Coding School</div>
           </div>
 
-          <div class="entry 4">
+          <div class="entry">
             <div class="time">2022–2023</div>
             <div class="role">Logistic Officer</div>
             <div class="org">ERRADA — Khartoum, Sudan</div>
@@ -147,11 +149,52 @@
           </div>
         </section>
       </div>
-   
+
  </main>
-    <!-- </main> -->
   </div>
   
+  <div class="container">
+      <section class="portfolio">
+        <h2 id="portfolio">Portfolio</h2>
+        <div class="categories">
+          <a href="#" class="active">All</a>
+          <a href="#">App Development</a>
+          <a href="#">Web Development</a>
+          <a href="#">Design</a>
+          <a href="#">Mentorship</a>
+        </div>
+
+        <div class="projects">
+          <div class="card">
+            <img src="images/bankapp.jpg" alt="Smart Bank App">
+            <h3>Smart Bank App</h3>
+          </div>
+
+          <div class="card">
+            <img src="images/blog.jpg" alt="Blog">
+            <h3>Blog (Next.js)</h3>
+          </div>
+
+          <div class="card">
+            <img src="images/rental.jpg" alt="Rental">
+            <h3>Rental</h3>
+          </div>
+
+          <div class="card">
+            <img src="images/code.jpg" alt="CodeFlow">
+            <h3>CodeFlow</h3>
+          </div>
+
+          <div class="card">
+            <img src="images/mentor.jpg" alt="Tech Mentor">
+            <h3>Tech Mentor</h3>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+
 </body>
 
 </html>
