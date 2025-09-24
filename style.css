@@ -298,5 +298,5 @@ h1{
   .wrap { grid-template-columns: 1fr; padding:18px; }
   .two-col { grid-template-columns: 1fr; }
   .skills { grid-template-columns: 1fr; }
-  .topnav { overflow-x:auto; }
+  .topnav { overflow-x:auto;}
 }
