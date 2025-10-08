@@ -1,176 +1,92 @@
-/* Blog Section */
-.blog-section {
-  padding: 50px 20px;
-  margin-left: 25vw; /* so it aligns with profile sidebar */
-}
-
-.blog-title {
-  font-size: 28px;
-  font-weight: 700;
-  margin-bottom: 30px;
-  color: #f52b07;
-  text-align: center;
-}
-
-.blog-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 25px;
-}
-
-.blog-card {
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-  overflow: hidden;
-  transition: 0.3s;
-}
-
-.blog-card:hover {
-  transform: translateY(-6px);
-}
-
-.blog-card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-}
-
-.blog-content {
-  padding: 15px;
-}
-
-.blog-content h3 {
-  font-size: 18px;
-  margin-bottom: 10px;
-  color: #f02906;
-}
-
-.blog-content p {
-  font-size: 14px;
-  color: #333;
-  line-height: 1.5;
-  margin-bottom: 12px;
-}
-
-.read-more {
-  font-size: 14px;
-  color: #f52b07;
-  text-decoration: none;
-  font-weight: 600;
-  transition: 0.3s;
-}
-
-.read-more:hover {
-  color: #ff8c00;
-}
-
-/* login and signup page */
-/* Reset */
+/* Reset some default styles */
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
 }
 
-/* Background */
+/* Body styles */
 body {
+  font-family: 'Arial', sans-serif;
+  background: #f0f2f5;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: linear-gradient(135deg, #ff7640, #ff9c1a);
 }
 
-/* Auth Container */
-.auth-container {
+/* Container for all forms */
+.container {
+  width: 90%;
+  max-width: 400px;
   background: #fff;
-  padding: 40px;
-  border-radius: 20px;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
-  width: 350px;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-/* Form Styling */
-.form {
-  display: none;
+/* Inner container for forms to position side by side or stacked */
+.forms {
+  display: flex;
+  flex-direction: column;
 }
 
-.form.login-form {
-  display: block;
+/* Individual form container styles */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.form h2 {
-  text-align: center;
+/* Heading styles */
+h2 {
   margin-bottom: 20px;
-  color: #ff7640;
+  color: #333;
 }
 
-.input-box {
-  position: relative;
-  margin-bottom: 20px;
-}
-
-.input-box input {
+/* Input styles */
+input {
   width: 100%;
-  padding: 12px;
-  border: 2px solid #ccc;
-  border-radius: 10px;
-  outline: none;
-  font-size: 14px;
-}
-
-.input-box label {
-  position: absolute;
-  top: 12px;
-  left: 12px;
-  color: #666;
-  pointer-events: none;
-  transition: 0.3s;
-}
-
-/* Floating Label */
-.input-box input:focus ~ label,
-.input-box input:valid ~ label {
-  top: -10px;
-  left: 10px;
-  font-size: 12px;
-  color: #ff7640;
-  background: #fff;
-  padding: 0 4px;
-}
-
-.btn {
-  width: 100%;
-  padding: 12px;
-  background: #ff7640;
-  border: none;
-  color: white;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
   font-size: 16px;
-  border-radius: 10px;
+}
+
+/* Button styles */
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
   cursor: pointer;
-  transition: 0.3s;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: #45a049;
 }
 
-.btn:hover {
-  background: #ff9c1a;
-}
-
+/* Switch text styles */
 .switch {
-  text-align: center;
   margin-top: 15px;
   font-size: 14px;
 }
-
 .switch a {
-  color: #ff7640;
-  font-weight: bold;
+  color: #007BFF;
   text-decoration: none;
 }
-
 .switch a:hover {
   text-decoration: underline;
 }
 
-
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  body {
+    padding: 20px;
+  }
+}
